@@ -1,15 +1,15 @@
 {
-  "version": 3,
+  "version": 2,
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node"
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/daily_objectives/server/main.js"
+      "dest": "index.html"
     }
   ]
 }
