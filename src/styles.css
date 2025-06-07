@@ -4,14 +4,7 @@
 @tailwind utilities;
 
 
-@theme {
-    --color-custom-mint: #A8E6CF;
-    --color-custom-sky: #B3E5FC;
-    --color-custom-lavanda: #D1C4E9;
-    --color-custom-melocoton: #FFCCBC;
-    --color-custom-soft-grey: #ECEFF1;
-    --color-custom-golden-yellow: #FFF59D;
-}
+
 
 html{
     background-color: #ECEFF1;
