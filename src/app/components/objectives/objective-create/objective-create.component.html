@@ -1,5 +1,5 @@
 <!-- Fullscreen overlay -->
-<div class="fixed top-0 left-0 w-screen h-screen z-50 bg-custom-lavanda bg-opacity-40 backdrop-blur-sm flex items-start justify-center pt-16">
+<div   class="fixed top-0 left-0 w-screen h-screen z-50 bg-custom-lavanda bg-opacity-40 backdrop-blur-sm flex items-start justify-center pt-16 overflow-y-auto max-h-screen px-4">
     <form
       [formGroup]="goalCreateForm"
       (ngSubmit)="confirmCreate()"

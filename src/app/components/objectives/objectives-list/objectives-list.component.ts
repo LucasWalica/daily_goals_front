@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from "../../reusable/navbar/navbar.component";
 import { AuthService } from '../../../services/auth.service';
@@ -5,14 +6,19 @@ import { ObjectivesService } from '../../../services/objectives.service';
 import { Goal } from '../../../models/goal.models';
 import { Router } from '@angular/router';
 import { ObjectivesDetailComponent } from "../objectives-detail/objectives-detail.component";
-import { CommonModule } from '@angular/common';
 import { ObjectiveCreateComponent } from "../objective-create/objective-create.component";
 import { FooterComponent } from "../../reusable/footer/footer.component";
 
 @Component({
   selector: 'app-objectives-list',
   standalone: true,
-  imports: [NavbarComponent, ObjectivesDetailComponent, CommonModule, ObjectiveCreateComponent, FooterComponent],
+   imports: [
+    CommonModule,
+    NavbarComponent,
+    ObjectivesDetailComponent,
+    ObjectiveCreateComponent,
+    FooterComponent
+  ],
   templateUrl: './objectives-list.component.html',
   styleUrl: './objectives-list.component.css'
 })
